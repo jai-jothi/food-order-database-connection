@@ -2,10 +2,10 @@ import { useContext } from 'react';
 
 import MealItemForm from './MealItemForm';
 import classes from './MealItem.module.css';
-import Cartcontext from '../../../store/Cart-context';
+import CartContext from '../../../store/Cart-context';
 
 const MealItem = (props) => {
-  const cartCtx = useContext(Cartcontext);
+  const cartCtx = useContext(CartContext);
 
   const price = `$${props.price.toFixed(2)}`;
 
